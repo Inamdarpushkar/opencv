@@ -1,16 +1,29 @@
+#OpenCV
+
 import cv2
 import matplotlib.pyplot as plt
-import numpy
+import numpy as np
 
-img=cv2.imread('watch.jpg',cv2.IMREAD_GRAYSCALE)
+#Load an color image in grayscale
+img=cv2.imread('_02_01.png',0)
+#Display an image using cv2
+# cv2.imshow('imgae',img)
+# #is a keyboard binging functions
+# cv2.waitKey(0)
+# #simply destroysallwindows
+# cv2.destroyAllWindows()
 
-#IMREAD_COLOR
-#IMREAD_UNCHANGED =-1
-#cv2.imshow('imgae',img)
-#cv2.waitKey(0)
-#cv2.destroyAllWindows()
 
-plt.imshow(img, cmap = 'gray', interpolation = 'bicubic')
-#plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
-plt.plot([200,300,400],[100,200,300],'c', linewidth=5)
+#destroyAllWindows bases on conditions
+# k = cv2.waitKey(0)
+# if k == 27:         # wait for ESC key to exit
+#     cv2.destroyAllWindows()
+# elif k == ord('s'): # wait for 's' key to save and exit
+#     cv2.imwrite('messigray.png',img)
+#     cv2.destroyAllWindows()
+
+#show image using matplotlib
+plt.imshow(img,cmap='gray',interpolation='bicubic')
+# plt.xticks([0,442]),plt.yticks([0,250])
+
 plt.show()
