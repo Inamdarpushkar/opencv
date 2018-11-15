@@ -25,5 +25,7 @@ img=cv2.imread('_02_01.png',0)
 #show image using matplotlib
 plt.imshow(img,cmap='gray',interpolation='bicubic')
 # plt.xticks([0,442]),plt.yticks([0,250])
-
+plt.plot([50,100],[80,100],'c',linewidth=4)
 plt.show()
+
+cv2.imwrite("test.png",img)
