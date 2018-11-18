@@ -7,13 +7,16 @@ import numpy as np
 ##PART I
 
 # #Load an color image in grayscale
-# img=cv2.imread('_02_01.png',0)
+img=cv2.imread('_02_01.png',0)
+
+print (img.shape)
+print(img.size)
 # #Display an image using cv2
-# # cv2.imshow('imgae',img)
+cv2.imshow('imgae',img)
 # # #is a keyboard binging functions
-# # cv2.waitKey(0)
+cv2.waitKey(0)
 # # #simply destroysallwindows
-# # cv2.destroyAllWindows()
+cv2.destroyAllWindows()
 #
 #
 # #destroyAllWindows bases on conditions
@@ -81,31 +84,13 @@ import numpy as np
 # cv2.destroyAllWindows()
 
 # IV
-img=cv2.imread('_02_01.png',cv2.IMREAD_COLOR)
-# img[55,55]=[255,255,255]
-# print(img[55,55])
-
-
-img[100:150,100:150]=[255,255,255]
-
-
-
-cv2.imshow('img',img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# img=cv2.imread('_02_01.png',cv2.IMREAD_COLOR)
+# # img[55,55]=[255,255,255]
+# # print(img[55,55])
 #
+#
+# img[100:150,100:150]=[255,255,255]
+#
+# cv2.imshow('img',img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
