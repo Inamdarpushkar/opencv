@@ -74,7 +74,7 @@ cv2.polylines(img,[pts],True,(0,255,255),5)
 
 #adding text to the image
 font=cv2.FONT_HERSHEY_SIMPLEX
-cv2.putText(img,'Test',(0,130),font,0.5,(200,255,255),2,cv2.LINE_AA)
+cv2.putText(img,'Test',(0,130),font,0.5,(200,255,255),5,cv2.LINE_AA)
 
 cv2.imshow('img',img)
 cv2.waitKey(0)
