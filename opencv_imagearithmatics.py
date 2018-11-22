@@ -4,7 +4,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-##PART I
+##PART V
 
 # #Load an color image in grayscale
 
