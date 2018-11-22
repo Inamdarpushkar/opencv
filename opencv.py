@@ -7,16 +7,16 @@ import numpy as np
 ##PART I
 
 # #Load an color image in grayscale
-img=cv2.imread('_02_01.png',0)
-
-print (img.shape)
-print(img.size)
-# #Display an image using cv2
-cv2.imshow('imgae',img)
-# # #is a keyboard binging functions
-cv2.waitKey(0)
-# # #simply destroysallwindows
-cv2.destroyAllWindows()
+# img=cv2.imread('_02_01.png',0)
+#
+# print (img.shape)
+# print(img.size)
+# # #Display an image using cv2
+# cv2.imshow('imgae',img)
+# # # #is a keyboard binging functions
+# cv2.waitKey(0)
+# # # #simply destroysallwindows
+# cv2.destroyAllWindows()
 #
 #
 # #destroyAllWindows bases on conditions
@@ -37,29 +37,29 @@ cv2.destroyAllWindows()
 
 ##PART II
 #
-# cap=cv2.VideoCapture(0)
-# fourcc=cv2.VideoWriter_fourcc(*'xvid')
-# out=cv2.VideoWriter('output.avi',fourcc,20.0,(640,480))
-#
-#
-#
-# while (True):
-#     # Capture frame-by-frame
-#     ret,frame = cap.read()
-#     #Our operations on the frame come here
-#
-#     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-#     out.write(frame)
-#     cv2.imshow('frame',gray)
-#     cv2.imshow('frame',frame)
-#
-#     #Display the resulting frame
-#     if cv2.waitKey(1) & 0xFF==ord('q'):
-#         break
-# #When everthing done, release the capture
-# cap.release()
-# out.release()
-# cv2.destroyAllWindows()
+cap=cv2.VideoCapture(0)
+fourcc=cv2.VideoWriter_fourcc(*'xvid')
+out=cv2.VideoWriter('output.avi',fourcc,20.0,(640,480))
+
+
+
+while (True):
+    # Capture frame-by-frame
+    ret,frame = cap.read()
+    #Our operations on the frame come here
+
+    gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
+    out.write(frame)
+    cv2.imshow('frame',gray)
+    cv2.imshow('framgcolor',frame)
+
+    #Display the resulting frame
+    if cv2.waitKey(1) & 0xFF==ord('q'):
+        break
+#When everthing done, release the capture
+cap.release()
+out.release()
+cv2.destroyAllWindows()
 
 
 ##PART III
