@@ -8,7 +8,7 @@ import numpy as np
 
 # #Load an color image in grayscale
 # img=cv2.imread('_02_01.png',0)
-#
+##
 # print (img.shape)
 # print(img.size)
 # # #Display an image using cv2
