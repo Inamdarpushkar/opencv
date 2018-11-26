@@ -9,7 +9,8 @@ mask=np.zeros(img.shape[:2],np.uint8)
 bgdModel=np.zeros((1,65),np.float64)
 fgdModel=np.zeros((1,65),np.float64)
 
-rect=(250,250,600,800)
+
+rect=(300,300,800,800)
 
 
 cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
